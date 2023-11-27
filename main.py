@@ -209,9 +209,9 @@ def send_message(to_user, access_token, region_1, weather_1, temp_1, TempNew_1, 
         # 获取距离下次生日的时间
         birth_day = get_birthday(value["birthday"], year, today)
         if birth_day == 0:
-            birthday_data = "今天是{}生日！祝{}生日快乐！".format(value["name"], value["name"])
+            birthday_data = "今天放假！！！".format(value["name"], value["name"])
         else:
-            birthday_data = "距离{}下一次生日还有{}天呢！".format(value["name"], birth_day)
+            birthday_data = "距离{}下一次个法定节假日还有{}天呢！".format(value["name"], birth_day)
         # 将生日数据插入data
         data["data"][key] = {"value": birthday_data}
     headers = {
